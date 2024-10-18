@@ -1,0 +1,24 @@
+SELECT COUNT(*)
+ FROM comments c,
+posts p,
+postLinks pl,
+postHistory ph,
+votes v,
+users u
+WHERE p.PostTypeId = 1
+AND p.Score = 65
+AND p.FavoriteCount <= 44.0
+AND u.Reputation >= 129
+AND u.DownVotes >= 45
+AND c.CreationDate <= 1076
+AND pl.CreationDate >= 806
+AND pl.CreationDate <= 1237
+AND ph.CreationDate >= 633
+AND ph.CreationDate <= 908
+AND v.CreationDate >= 993
+
+AND p.Id = pl.PostId
+AND p.Id = ph.PostId
+AND p.Id = c.PostId
+AND u.Id = c.UserId
+AND u.Id = v.UserId;
