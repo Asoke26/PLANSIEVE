@@ -22,4 +22,3 @@ Trained models for **JOB-LIGHT-SCALE** and **STATS-CEB-SCALE** are stored in the
 
 ## Testing
 All testing scripts required to evaluate the trained models on different workloads are provided in the `scripts` folder.
-```
