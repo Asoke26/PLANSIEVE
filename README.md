@@ -2,8 +2,6 @@
 
 # PLANSIEVE
 
-```markdown
-# PLANSIEVE 
 
 This repository contains all the necessary resources to reproduce the experiments presented in the PLANSIEVE paper.
 
